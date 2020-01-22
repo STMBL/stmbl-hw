@@ -1,0 +1,85 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L stmbl:RJ45_LED J1
+U 1 1 5E0AFE67
+P 3900 3400
+F 0 "J1" V 3169 3400 50  0000 C CNN
+F 1 "RJ45_LED" V 3260 3400 50  0000 C CNN
+F 2 "stmbl:RJ45_LED" V 3359 3400 60  0000 C CNN
+F 3 "" H 3900 3350 60  0000 C CNN
+	1    3900 3400
+	0    -1   1    0   
+$EndComp
+$Comp
+L stmbl:CONN_01X04 J2
+U 1 1 5E0B23AD
+P 5550 3100
+F 0 "J2" H 5630 3092 50  0000 L CNN
+F 1 "CONN_01X04" H 5630 3001 50  0000 L CNN
+F 2 "stmbl:RM3.5_1x4_UP" H 5550 3100 50  0001 C CNN
+F 3 "" H 5550 3100 50  0001 C CNN
+	1    5550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:CONN_01X05 J3
+U 1 1 5E0B2722
+P 5550 3700
+F 0 "J3" H 5630 3742 50  0000 L CNN
+F 1 "CONN_01X05" H 5630 3651 50  0000 L CNN
+F 2 "stmbl:RM3.5_1x5_UP" H 5550 3700 50  0001 C CNN
+F 3 "" H 5550 3700 50  0001 C CNN
+	1    5550 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3000 5350 3000
+Wire Wire Line
+	4400 3100 5350 3100
+Wire Wire Line
+	4400 3200 5350 3200
+Wire Wire Line
+	4400 3600 4850 3600
+Wire Wire Line
+	4850 3600 4850 3300
+Wire Wire Line
+	4850 3300 5350 3300
+Wire Wire Line
+	4400 3500 5350 3500
+Wire Wire Line
+	5350 3600 4950 3600
+Wire Wire Line
+	4950 3600 4950 3400
+Wire Wire Line
+	4950 3400 4750 3400
+Wire Wire Line
+	4750 3400 4750 3300
+Wire Wire Line
+	4750 3300 4400 3300
+Wire Wire Line
+	4400 3700 5350 3700
+Wire Wire Line
+	4400 3800 5350 3800
+Wire Wire Line
+	3900 4050 3900 4150
+Wire Wire Line
+	3900 4150 4650 4150
+Wire Wire Line
+	4650 4150 4650 3900
+Wire Wire Line
+	4650 3900 5350 3900
+$EndSCHEMATC
