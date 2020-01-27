@@ -132,6 +132,8 @@
     (add_net "Net-(J2-Pad4)")
     (add_net "Net-(J2-Pad5)")
     (add_net "Net-(J2-Pad6)")
+    (add_net "Net-(U1-Pad13)")
+    (add_net "Net-(U1-Pad14)")
   )
 
   (module stmbl:C_0603 (layer F.Cu) (tedit 5DA644E2) (tstamp 5E2F80EF)
