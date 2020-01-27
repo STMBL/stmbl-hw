@@ -371,50 +371,6 @@ Wire Wire Line
 Wire Wire Line
 	8550 3250 8450 3250
 $Comp
-L stmbl:+3.3V #PWR039
-U 1 1 5E451397
-P 8550 3250
-F 0 "#PWR039" H 8550 3100 50  0001 C CNN
-F 1 "+3.3V" V 8565 3378 50  0000 L CNN
-F 2 "" H 8550 3250 50  0001 C CNN
-F 3 "" H 8550 3250 50  0001 C CNN
-	1    8550 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L stmbl:+3.3V #PWR038
-U 1 1 5E451F3C
-P 8550 2250
-F 0 "#PWR038" H 8550 2100 50  0001 C CNN
-F 1 "+3.3V" V 8565 2378 50  0000 L CNN
-F 2 "" H 8550 2250 50  0001 C CNN
-F 3 "" H 8550 2250 50  0001 C CNN
-	1    8550 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L stmbl:+3.3V #PWR036
-U 1 1 5E4524EB
-P 8150 1000
-F 0 "#PWR036" H 8150 850 50  0001 C CNN
-F 1 "+3.3V" H 8165 1173 50  0000 C CNN
-F 2 "" H 8150 1000 50  0001 C CNN
-F 3 "" H 8150 1000 50  0001 C CNN
-	1    8150 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L stmbl:+3.3V #PWR033
-U 1 1 5E452F59
-P 7750 1000
-F 0 "#PWR033" H 7750 850 50  0001 C CNN
-F 1 "+3.3V" H 7765 1173 50  0000 C CNN
-F 2 "" H 7750 1000 50  0001 C CNN
-F 3 "" H 7750 1000 50  0001 C CNN
-	1    7750 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L stmbl:GND #PWR034
 U 1 1 5E453228
 P 7750 1500
@@ -538,9 +494,9 @@ Text GLabel 7350 2450 0    60   Input ~ 0
 A1+
 Text GLabel 7350 2050 0    60   Input ~ 0
 A1-
-Text GLabel 8550 2050 2    60   Input ~ 0
-B1+
 Text GLabel 8550 2450 2    60   Input ~ 0
+B1+
+Text GLabel 8550 2050 2    60   Input ~ 0
 B1-
 Wire Wire Line
 	7350 3050 7450 3050
@@ -554,9 +510,9 @@ Text GLabel 7350 3450 0    60   Input ~ 0
 A2+
 Text GLabel 7350 3050 0    60   Input ~ 0
 A2-
-Text GLabel 8550 3050 2    60   Input ~ 0
-B2+
 Text GLabel 8550 3450 2    60   Input ~ 0
+B2+
+Text GLabel 8550 3050 2    60   Input ~ 0
 B2-
 $Comp
 L stmbl:+5V #PWR08
@@ -1068,17 +1024,6 @@ Connection ~ 6000 5550
 Connection ~ 7800 5050
 Connection ~ 8950 5550
 $Comp
-L stmbl:+3.3V #PWR01
-U 1 1 5E5D9FF4
-P 900 2150
-F 0 "#PWR01" H 900 2000 50  0001 C CNN
-F 1 "+3.3V" V 915 2278 50  0000 L CNN
-F 2 "" H 900 2150 50  0001 C CNN
-F 3 "" H 900 2150 50  0001 C CNN
-	1    900  2150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L stmbl:R R16
 U 1 1 5E2A356F
 P 3550 3150
@@ -1357,7 +1302,7 @@ F 2 "stmbl:CMC_0805" H 9800 2500 60  0001 C CNN
 F 3 "" H 9800 2500 60  0001 C CNN
 F 4 "DLW21HN900SQ2L" H 9800 2500 50  0001 C CNN "Manufacturer No"
 	1    9800 2500
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L stmbl:CMC U13
@@ -1381,7 +1326,7 @@ F 2 "stmbl:CMC_0805" H 9800 3800 60  0001 C CNN
 F 3 "" H 9800 3800 60  0001 C CNN
 F 4 "DLW21HN900SQ2L" H 9800 3800 50  0001 C CNN "Manufacturer No"
 	1    9800 3800
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L stmbl:CMC U10
@@ -1471,4 +1416,59 @@ Wire Wire Line
 	7600 5550 7800 5550
 Connection ~ 7600 5550
 Connection ~ 7800 5550
+$Comp
+L stmbl:+3.3VA #PWR0113
+U 1 1 5E8F2936
+P 8550 2250
+F 0 "#PWR0113" H 8550 2100 50  0001 C CNN
+F 1 "+3.3VA" V 8565 2377 50  0000 L CNN
+F 2 "" H 8550 2250 50  0001 C CNN
+F 3 "" H 8550 2250 50  0001 C CNN
+	1    8550 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L stmbl:+3.3VA #PWR0114
+U 1 1 5E8F3130
+P 8550 3250
+F 0 "#PWR0114" H 8550 3100 50  0001 C CNN
+F 1 "+3.3VA" V 8565 3377 50  0000 L CNN
+F 2 "" H 8550 3250 50  0001 C CNN
+F 3 "" H 8550 3250 50  0001 C CNN
+	1    8550 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L stmbl:+3.3VA #PWR0115
+U 1 1 5E8F439C
+P 8150 1000
+F 0 "#PWR0115" H 8150 850 50  0001 C CNN
+F 1 "+3.3VA" V 8165 1127 50  0000 L CNN
+F 2 "" H 8150 1000 50  0001 C CNN
+F 3 "" H 8150 1000 50  0001 C CNN
+	1    8150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:+3.3VA #PWR0116
+U 1 1 5E8F4B61
+P 7750 1000
+F 0 "#PWR0116" H 7750 850 50  0001 C CNN
+F 1 "+3.3VA" V 7765 1127 50  0000 L CNN
+F 2 "" H 7750 1000 50  0001 C CNN
+F 3 "" H 7750 1000 50  0001 C CNN
+	1    7750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:+5V #PWR?
+U 1 1 5E8F5667
+P 900 2150
+F 0 "#PWR?" H 900 2000 50  0001 C CNN
+F 1 "+5V" V 915 2278 50  0000 L CNN
+F 2 "" H 900 2150 50  0001 C CNN
+F 3 "" H 900 2150 50  0001 C CNN
+	1    900  2150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
