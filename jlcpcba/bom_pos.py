@@ -8,7 +8,7 @@ place = []
 bom = []
 bomr = []
 
-rot = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0)]
+rot = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0), ("stmbl:SOT-23-6", -180.0), ("stmbl:SOIC-8-N", -90.0), ("stmbl:Oscillator_SMD_0603_4Pads", 90.0)]
 
 def parse_module(module):
   package = module[1]._val # package
