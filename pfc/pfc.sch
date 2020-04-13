@@ -1,0 +1,768 @@
+EESchema Schematic File Version 5
+EELAYER 33 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 5600 1150
+Connection ~ 6650 950 
+Connection ~ 4750 950 
+Connection ~ 7250 950 
+Connection ~ 5600 2500
+Connection ~ 6650 2500
+Connection ~ 7250 1150
+Connection ~ 7550 1150
+Connection ~ 7900 1150
+Connection ~ 7900 2500
+Connection ~ 7550 2500
+Connection ~ 6650 2150
+Connection ~ 5600 2150
+Connection ~ 6350 1850
+Connection ~ 5300 1850
+Connection ~ 4750 1150
+Connection ~ 4400 1150
+Connection ~ 4400 2500
+Connection ~ 8650 1150
+Connection ~ 8650 2500
+Connection ~ 6450 2500
+Connection ~ 4200 1150
+Connection ~ 4200 2500
+Connection ~ 8250 1150
+Connection ~ 8250 2500
+Connection ~ 8250 2200
+Connection ~ 8650 2200
+Connection ~ 7300 4650
+Connection ~ 7500 5250
+Connection ~ 8650 5250
+Connection ~ 4650 2500
+Connection ~ 9000 5250
+Connection ~ 9000 4650
+Connection ~ 7700 5250
+Connection ~ 8200 5250
+Connection ~ 7950 5250
+Connection ~ 7500 4350
+Connection ~ 7950 4450
+Connection ~ 8100 1150
+Connection ~ 3950 2500
+Connection ~ 4050 1150
+Wire Wire Line
+	2200 1750 2500 1750
+Wire Wire Line
+	2200 1850 2700 1850
+Wire Wire Line
+	2500 1400 3300 1400
+Wire Wire Line
+	2500 1750 2500 1400
+Wire Wire Line
+	3000 1150 4050 1150
+Wire Wire Line
+	3000 1550 3000 1150
+Wire Wire Line
+	3000 2150 3000 2500
+Wire Wire Line
+	3000 2500 3950 2500
+Wire Wire Line
+	3300 1400 3300 1850
+Wire Wire Line
+	3950 2500 4200 2500
+Wire Wire Line
+	4050 1150 4200 1150
+Wire Wire Line
+	4200 1150 4200 1700
+Wire Wire Line
+	4200 2000 4200 2500
+Wire Wire Line
+	4200 2500 4400 2500
+Wire Wire Line
+	4400 1150 4200 1150
+Wire Wire Line
+	4400 1150 4400 1700
+Wire Wire Line
+	4400 2000 4400 2500
+Wire Wire Line
+	4400 2500 4650 2500
+Wire Wire Line
+	4650 2450 4650 2500
+Wire Wire Line
+	4650 2500 4750 2500
+Wire Wire Line
+	4750 750  4750 950 
+Wire Wire Line
+	4750 950  4750 1150
+Wire Wire Line
+	4750 950  4900 950 
+Wire Wire Line
+	4750 1150 4400 1150
+Wire Wire Line
+	4750 1150 4900 1150
+Wire Wire Line
+	4900 1850 4950 1850
+Wire Wire Line
+	5250 1850 5300 1850
+Wire Wire Line
+	5300 1850 5300 2150
+Wire Wire Line
+	5500 950  6650 950 
+Wire Wire Line
+	5500 1150 5600 1150
+Wire Wire Line
+	5600 1150 5600 1600
+Wire Wire Line
+	5600 1150 6700 1150
+Wire Wire Line
+	5600 2000 5600 2150
+Wire Wire Line
+	5600 2150 5600 2500
+Wire Wire Line
+	5600 2500 5050 2500
+Wire Wire Line
+	5950 1850 6000 1850
+Wire Wire Line
+	6300 1850 6350 1850
+Wire Wire Line
+	6350 1850 6350 2150
+Wire Wire Line
+	6450 2500 5600 2500
+Wire Wire Line
+	6650 950  6650 1600
+Wire Wire Line
+	6650 950  6700 950 
+Wire Wire Line
+	6650 2000 6650 2150
+Wire Wire Line
+	6650 2150 6650 2500
+Wire Wire Line
+	6650 2500 6450 2500
+Wire Wire Line
+	6650 2500 7550 2500
+Wire Wire Line
+	6700 750  4750 750 
+Wire Wire Line
+	7000 750  7250 750 
+Wire Wire Line
+	7000 950  7250 950 
+Wire Wire Line
+	7000 1150 7250 1150
+Wire Wire Line
+	7200 4350 7500 4350
+Wire Wire Line
+	7250 750  7250 950 
+Wire Wire Line
+	7250 950  7250 1150
+Wire Wire Line
+	7250 1150 7550 1150
+Wire Wire Line
+	7250 4650 7300 4650
+Wire Wire Line
+	7300 4650 7300 4850
+Wire Wire Line
+	7300 4650 8300 4650
+Wire Wire Line
+	7300 5150 7300 5250
+Wire Wire Line
+	7300 5250 7500 5250
+Wire Wire Line
+	7500 4350 7500 4850
+Wire Wire Line
+	7500 4350 8300 4350
+Wire Wire Line
+	7500 5150 7500 5250
+Wire Wire Line
+	7500 5250 7700 5250
+Wire Wire Line
+	7550 1150 7550 1700
+Wire Wire Line
+	7550 1150 7900 1150
+Wire Wire Line
+	7550 2000 7550 2500
+Wire Wire Line
+	7550 2500 7900 2500
+Wire Wire Line
+	7700 4450 7700 4850
+Wire Wire Line
+	7700 5150 7700 5250
+Wire Wire Line
+	7700 5250 7950 5250
+Wire Wire Line
+	7900 1150 7900 1700
+Wire Wire Line
+	7900 1150 8100 1150
+Wire Wire Line
+	7900 2000 7900 2500
+Wire Wire Line
+	7900 2500 8250 2500
+Wire Wire Line
+	7950 4450 7700 4450
+Wire Wire Line
+	7950 4450 7950 4500
+Wire Wire Line
+	7950 4800 7950 4850
+Wire Wire Line
+	7950 5150 7950 5250
+Wire Wire Line
+	7950 5250 8200 5250
+Wire Wire Line
+	8100 1150 8250 1150
+Wire Wire Line
+	8100 2500 8250 2500
+Wire Wire Line
+	8200 4550 8200 4950
+Wire Wire Line
+	8200 4550 8300 4550
+Wire Wire Line
+	8200 5250 8650 5250
+Wire Wire Line
+	8250 1150 8550 1150
+Wire Wire Line
+	8250 1150 8650 1150
+Wire Wire Line
+	8250 1450 8250 1500
+Wire Wire Line
+	8250 1800 8250 1850
+Wire Wire Line
+	8250 2150 8250 2200
+Wire Wire Line
+	8250 2200 8300 2200
+Wire Wire Line
+	8250 2500 8550 2500
+Wire Wire Line
+	8250 2500 8650 2500
+Wire Wire Line
+	8300 4450 7950 4450
+Wire Wire Line
+	8650 1150 9000 1150
+Wire Wire Line
+	8650 1450 8650 1500
+Wire Wire Line
+	8650 1800 8650 1850
+Wire Wire Line
+	8650 2150 8650 2200
+Wire Wire Line
+	8650 2200 8700 2200
+Wire Wire Line
+	8650 2500 9000 2500
+Wire Wire Line
+	8650 5250 9000 5250
+Wire Wire Line
+	8900 4350 9050 4350
+Wire Wire Line
+	8900 4450 9250 4450
+Wire Wire Line
+	8900 4650 9000 4650
+Wire Wire Line
+	9000 1150 9000 1800
+Wire Wire Line
+	9000 2500 9000 1900
+Wire Wire Line
+	9000 4650 9000 4850
+Wire Wire Line
+	9000 4650 9250 4650
+Wire Wire Line
+	9000 5150 9000 5250
+Wire Wire Line
+	9000 5250 9150 5250
+Wire Wire Line
+	9150 4550 8900 4550
+Wire Wire Line
+	9150 5250 9150 4550
+Text GLabel 4650 2250 1    50   Input ~ 0
+I_sense
+Text GLabel 4900 1850 0    50   Input ~ 0
+Gate
+Text GLabel 5950 1850 0    50   Input ~ 0
+Gate
+Text GLabel 7200 4350 0    50   Input ~ 0
+U_FB
+Text GLabel 7250 4650 0    50   Input ~ 0
+U_OVP
+Text GLabel 8300 2200 2    50   Input ~ 0
+U_FB
+Text GLabel 8700 2200 2    50   Input ~ 0
+U_OVP
+Text GLabel 9250 4450 2    50   Input ~ 0
+Gate
+Text GLabel 9250 4650 2    50   Input ~ 0
+I_sense
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 5EA4A187
+P 4650 2350
+F 0 "NT1" V 4695 2310 50  0000 R CNN
+F 1 "Net-Tie_2" V 4605 2310 50  0000 R CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 4650 2350 50  0001 C CNN
+F 3 "~" H 4650 2350 50  0001 C CNN
+	1    4650 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:VPP #PWR0101
+U 1 1 5E9BD7D0
+P 8100 1150
+F 0 "#PWR0101" H 8100 1000 50  0001 C CNN
+F 1 "VPP" H 8115 1320 50  0000 C CNN
+F 2 "" H 8100 1150 50  0001 C CNN
+F 3 "" H 8100 1150 50  0001 C CNN
+	1    8100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:+15V #PWR04
+U 1 1 5E99FC3E
+P 9050 4350
+F 0 "#PWR04" H 9050 4200 50  0001 C CNN
+F 1 "+15V" H 9065 4520 50  0000 C CNN
+F 2 "" H 9050 4350 50  0001 C CNN
+F 3 "" H 9050 4350 50  0001 C CNN
+	1    9050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:GNDA #PWR0105
+U 1 1 5EA4D609
+P 3950 2500
+F 0 "#PWR0105" H 3950 2250 50  0001 C CNN
+F 1 "GNDA" H 3955 2330 50  0000 C CNN
+F 2 "" H 3950 2500 50  0001 C CNN
+F 3 "" H 3950 2500 50  0001 C CNN
+	1    3950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:GND #PWR01
+U 1 1 5E98645F
+P 6450 2500
+F 0 "#PWR01" H 6450 2250 50  0001 C CNN
+F 1 "GND" H 6455 2327 50  0000 C CNN
+F 2 "" H 6450 2500 50  0001 C CNN
+F 3 "" H 6450 2500 50  0001 C CNN
+	1    6450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:GND #PWR03
+U 1 1 5E98EE55
+P 8650 5250
+F 0 "#PWR03" H 8650 5000 50  0001 C CNN
+F 1 "GND" H 8655 5077 50  0000 C CNN
+F 2 "" H 8650 5250 50  0001 C CNN
+F 3 "" H 8650 5250 50  0001 C CNN
+	1    8650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R1
+U 1 1 5E96EDAC
+P 4900 2500
+F 0 "R1" V 5106 2500 50  0000 C CNN
+F 1 "R" V 5015 2500 50  0000 C CNN
+F 2 "stmbl-kicad-lib:R_2512_BIG" V 4830 2500 50  0001 C CNN
+F 3 "" H 4900 2500 50  0000 C CNN
+	1    4900 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:R R2
+U 1 1 5E97840E
+P 5100 1850
+F 0 "R2" V 5306 1850 50  0000 C CNN
+F 1 "R" V 5215 1850 50  0000 C CNN
+F 2 "stmbl-kicad-lib:R_0805" V 5030 1850 50  0001 C CNN
+F 3 "" H 5100 1850 50  0000 C CNN
+	1    5100 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:R R3
+U 1 1 5E976A8B
+P 5450 2150
+F 0 "R3" V 5656 2150 50  0000 C CNN
+F 1 "R" V 5565 2150 50  0000 C CNN
+F 2 "stmbl-kicad-lib:R_0805" V 5380 2150 50  0001 C CNN
+F 3 "" H 5450 2150 50  0000 C CNN
+	1    5450 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:R R4
+U 1 1 5E977461
+P 6150 1850
+F 0 "R4" V 6356 1850 50  0000 C CNN
+F 1 "R" V 6265 1850 50  0000 C CNN
+F 2 "stmbl-kicad-lib:R_0805" V 6080 1850 50  0001 C CNN
+F 3 "" H 6150 1850 50  0000 C CNN
+	1    6150 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:R R5
+U 1 1 5E974FBB
+P 6500 2150
+F 0 "R5" V 6706 2150 50  0000 C CNN
+F 1 "R" V 6615 2150 50  0000 C CNN
+F 2 "stmbl-kicad-lib:R_0805" V 6430 2150 50  0001 C CNN
+F 3 "" H 6500 2150 50  0000 C CNN
+	1    6500 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:R R6
+U 1 1 5E99E319
+P 7950 4650
+F 0 "R6" H 8020 4695 50  0000 L CNN
+F 1 "R" H 8020 4605 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" V 7880 4650 50  0001 C CNN
+F 3 "" H 7950 4650 50  0001 C CNN
+	1    7950 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R7
+U 1 1 5E99A094
+P 8200 5100
+F 0 "R7" H 8270 5145 50  0000 L CNN
+F 1 "R" H 8270 5055 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" V 8130 5100 50  0001 C CNN
+F 3 "" H 8200 5100 50  0001 C CNN
+	1    8200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R8
+U 1 1 5E96AD1B
+P 8250 1300
+F 0 "R8" H 8320 1345 50  0000 L CNN
+F 1 "R" H 8320 1255 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8180 1300 50  0001 C CNN
+F 3 "" H 8250 1300 50  0000 C CNN
+	1    8250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R9
+U 1 1 5E96B4C8
+P 8250 1650
+F 0 "R9" H 8320 1695 50  0000 L CNN
+F 1 "R" H 8320 1605 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8180 1650 50  0001 C CNN
+F 3 "" H 8250 1650 50  0000 C CNN
+	1    8250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R10
+U 1 1 5E96BBCB
+P 8250 2000
+F 0 "R10" H 8320 2045 50  0000 L CNN
+F 1 "R" H 8320 1955 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8180 2000 50  0001 C CNN
+F 3 "" H 8250 2000 50  0000 C CNN
+	1    8250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R11
+U 1 1 5E96C9CE
+P 8250 2350
+F 0 "R11" H 8320 2395 50  0000 L CNN
+F 1 "R" H 8320 2305 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8180 2350 50  0001 C CNN
+F 3 "" H 8250 2350 50  0000 C CNN
+	1    8250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R12
+U 1 1 5E96D271
+P 8650 1300
+F 0 "R12" H 8720 1345 50  0000 L CNN
+F 1 "R" H 8720 1255 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8580 1300 50  0001 C CNN
+F 3 "" H 8650 1300 50  0000 C CNN
+	1    8650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R13
+U 1 1 5E96D27F
+P 8650 1650
+F 0 "R13" H 8720 1695 50  0000 L CNN
+F 1 "R" H 8720 1605 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8580 1650 50  0001 C CNN
+F 3 "" H 8650 1650 50  0000 C CNN
+	1    8650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R14
+U 1 1 5E96D26A
+P 8650 2000
+F 0 "R14" H 8720 2045 50  0000 L CNN
+F 1 "R" H 8720 1955 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8580 2000 50  0001 C CNN
+F 3 "" H 8650 2000 50  0000 C CNN
+	1    8650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:R R15
+U 1 1 5E96D278
+P 8650 2350
+F 0 "R15" H 8720 2395 50  0000 L CNN
+F 1 "R" H 8720 2305 50  0000 L CNN
+F 2 "stmbl-kicad-lib:R_0805" V 8580 2350 50  0001 C CNN
+F 3 "" H 8650 2350 50  0000 C CNN
+	1    8650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:D D2
+U 1 1 5E959FD1
+P 6850 750
+F 0 "D2" H 6750 800 50  0000 C CNN
+F 1 "D" H 6750 700 50  0000 C CNN
+F 2 "stmbl-kicad-lib:TO-252-2_STSiC" H 6850 750 50  0001 C CNN
+F 3 "" H 6850 750 50  0000 C CNN
+	1    6850 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L stmbl:D D3
+U 1 1 5E94D5B0
+P 6850 950
+F 0 "D3" H 6750 1000 50  0000 C CNN
+F 1 "D" H 6750 900 50  0000 C CNN
+F 2 "stmbl-kicad-lib:TO-252-2_STSiC" H 6850 950 50  0001 C CNN
+F 3 "" H 6850 950 50  0000 C CNN
+	1    6850 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L stmbl:D D4
+U 1 1 5E94E1EB
+P 6850 1150
+F 0 "D4" H 6750 1200 50  0000 C CNN
+F 1 "D" H 6750 1100 50  0000 C CNN
+F 2 "stmbl-kicad-lib:TO-252-2_STSiC" H 6850 1150 50  0001 C CNN
+F 3 "" H 6850 1150 50  0000 C CNN
+	1    6850 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L stmbl:VDC #PWR0106
+U 1 1 5EA50E20
+P 4050 1150
+F 0 "#PWR0106" H 4050 1050 50  0001 C CNN
+F 1 "VDC" H 4050 1425 50  0000 C CNN
+F 2 "" H 4050 1150 50  0001 C CNN
+F 3 "" H 4050 1150 50  0001 C CNN
+	1    4050 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:INDUCTOR L1
+U 1 1 5E960894
+P 5200 950
+F 0 "L1" V 5150 700 50  0000 C CNN
+F 1 "INDUCTOR" V 5150 1050 50  0000 C CNN
+F 2 "PQ2617BHA:PQ2617BHA" H 5200 950 50  0001 C CNN
+F 3 "" H 5200 950 50  0000 C CNN
+	1    5200 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:INDUCTOR L2
+U 1 1 5E95F71B
+P 5200 1150
+F 0 "L2" V 5150 900 50  0000 C CNN
+F 1 "INDUCTOR" V 5150 1250 50  0000 C CNN
+F 2 "PQ2617BHA:PQ2617BHA" H 5200 1150 50  0001 C CNN
+F 3 "" H 5200 1150 50  0000 C CNN
+	1    5200 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L stmbl:CONN_01X02 J2
+U 1 1 5E97E98C
+P 9200 1800
+F 0 "J2" H 9280 1792 50  0000 L CNN
+F 1 "CONN_01X02" H 9280 1701 50  0000 L CNN
+F 2 "stmbl-kicad-lib:RM7.62_1x2" H 9200 1800 50  0001 C CNN
+F 3 "" H 9200 1800 50  0001 C CNN
+	1    9200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C1
+U 1 1 5E97AD62
+P 4200 1850
+F 0 "C1" H 4250 1950 50  0000 L CNN
+F 1 "C" H 4250 1750 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_1812" H 4238 1700 50  0001 C CNN
+F 3 "" H 4200 1850 50  0000 C CNN
+	1    4200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C2
+U 1 1 5E97A5BD
+P 4400 1850
+F 0 "C2" H 4450 1950 50  0000 L CNN
+F 1 "C" H 4450 1750 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_1812" H 4438 1700 50  0001 C CNN
+F 3 "" H 4400 1850 50  0000 C CNN
+	1    4400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C3
+U 1 1 5E989256
+P 7300 5000
+F 0 "C3" H 7350 5100 50  0000 L CNN
+F 1 "C" H 7350 4900 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" H 7338 4850 50  0001 C CNN
+F 3 "" H 7300 5000 50  0001 C CNN
+	1    7300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C4
+U 1 1 5E989F3D
+P 7500 5000
+F 0 "C4" H 7550 5100 50  0000 L CNN
+F 1 "C" H 7550 4900 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" H 7538 4850 50  0001 C CNN
+F 3 "" H 7500 5000 50  0001 C CNN
+	1    7500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:CP C5
+U 1 1 5E9697C2
+P 7550 1850
+F 0 "C5" H 7668 1895 50  0000 L CNN
+F 1 "CP" H 7668 1805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 7588 1700 50  0001 C CNN
+F 3 "" H 7550 1850 50  0000 C CNN
+	1    7550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C6
+U 1 1 5E99A9F6
+P 7700 5000
+F 0 "C6" H 7750 5100 50  0000 L CNN
+F 1 "C" H 7750 4900 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" H 7738 4850 50  0001 C CNN
+F 3 "" H 7700 5000 50  0001 C CNN
+	1    7700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:CP C7
+U 1 1 5E96A1C7
+P 7900 1850
+F 0 "C7" H 8018 1895 50  0000 L CNN
+F 1 "CP" H 8018 1805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 7938 1700 50  0001 C CNN
+F 3 "" H 7900 1850 50  0000 C CNN
+	1    7900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C8
+U 1 1 5E99DB09
+P 7950 5000
+F 0 "C8" H 8000 5100 50  0000 L CNN
+F 1 "C" H 8000 4900 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" H 7988 4850 50  0001 C CNN
+F 3 "" H 7950 5000 50  0001 C CNN
+	1    7950 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:C C9
+U 1 1 5E992FD9
+P 9000 5000
+F 0 "C9" H 9050 5100 50  0000 L CNN
+F 1 "C" H 9050 4900 50  0000 L CNN
+F 2 "stmbl-kicad-lib:C_0603" H 9038 4850 50  0001 C CNN
+F 3 "" H 9000 5000 50  0001 C CNN
+	1    9000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5E98A2AD
+P 2000 1850
+F 0 "J1" H 2108 2129 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2108 2038 50  0000 C CNN
+F 2 "stmbl-kicad-lib:RM7.62_1x3" H 2000 1850 50  0001 C CNN
+F 3 "~" H 2000 1850 50  0001 C CNN
+	1    2000 1850
+	1    0    0    1   
+$EndComp
+$Comp
+L stmbl:NFET U1
+U 1 1 5E94B935
+P 5550 1800
+F 0 "U1" H 5400 1950 60  0000 L CNN
+F 1 "NFET" H 5300 1650 60  0000 L CNN
+F 2 "stmbl-kicad-lib:TO-220-3_Horizontal_TabDown_small_pads" H 5350 1650 60  0001 C CNN
+F 3 "" H 5350 1650 60  0001 C CNN
+	1    5550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L stmbl:NFET U2
+U 1 1 5E94C190
+P 6600 1800
+F 0 "U2" H 6450 1950 60  0000 L CNN
+F 1 "NFET" H 6350 1650 60  0000 L CNN
+F 2 "stmbl-kicad-lib:TO-220-3_Horizontal_TabDown_small_pads" H 6400 1650 60  0001 C CNN
+F 3 "" H 6400 1650 60  0001 C CNN
+	1    6600 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L BD7692FJ:BD7692FJ U3
+U 1 1 5E97AE7A
+P 8600 4500
+F 0 "U3" H 8600 4964 50  0000 C CNN
+F 1 "BD7692FJ" H 8600 4873 50  0000 C CNN
+F 2 "stmbl-kicad-lib:SOIC-8-N" H 8800 4350 50  0001 C CNN
+F 3 "" H 8800 4350 50  0001 C CNN
+	1    8600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+AA- D1
+U 1 1 5E989C5E
+P 3000 1850
+F 0 "D1" V 3045 1507 50  0000 R CNN
+F 1 "D_Bridge_+AA-" V 2955 1507 50  0000 R CNN
+F 2 "stmbl-kicad-lib:dfb_bridge" H 3000 1850 50  0001 C CNN
+F 3 "~" H 3000 1850 50  0001 C CNN
+	1    3000 1850
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 2750 4200 800  900 
+U 5E9B64B6
+F0 "hv_supply" 50
+F1 "hv_supply.sch" 50
+$EndSheet
+$EndSCHEMATC
