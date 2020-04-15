@@ -39,9 +39,6 @@ ERC_CheckBusToBusConflicts=1
 ERC_CheckBusToNetConflicts=1
 [ModEditFrame]
 version=1
-[sheetnames]
-1=00000000-0000-0000-0000-00005e8f109a:
-2=00000000-0000-0000-0000-00005e9b64b6:hv_supply
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -275,3 +272,6 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[sheetnames]
+1=00000000-0000-0000-0000-00005e96fc51:
+2=00000000-0000-0000-0000-00005e9b64b6:hv_supply
