@@ -8,7 +8,10 @@ place = []
 bom = []
 bomr = []
 
-rot = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0), ("stmbl:SOT-23-6", -180.0), ("stmbl:SOIC-8-N", -90.0), ("stmbl:Oscillator_SMD_0603_4Pads", 90.0)]
+rot_package = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0), ("stmbl:SOT-23-6", -180.0), ("stmbl:SOT-23", -180.0), ("stmbl:SOIC-8-N", -90.0), ("stmbl:SOIC-8-POWER", -90.0), ("stmbl:Oscillator_SMD_0603_4Pads", -90.0), ("stmbl:LQFP-48_7x7mm_Pitch0.5mm", -90.0), ("stmbl:LQFP-64_12x12_Pitch0.5mm", -90.0), ("stmbl:CP_D6.3", -180.0), ("stmbl:SWRB1204S", -180.0), ("stmbl:MWSA0503", -180.0), ("stmbl:SMA_Standard", -180.0), ("stmbl:SOD-123", -180.0), ("stmbl:D_SMC", -180.0)]
+rot_part = [("C383538", 90.0)]
+
+# ("C37448", -90.0), ("C9669", -90.0)
 
 def parse_module(module):
   package = module[1]._val # package
@@ -37,9 +40,15 @@ def parse_module(module):
       if n[0] == Symbol('fp_text'):
         if n[1] == Symbol('reference'):
           ref = n[2]._val
-  for p in rot:
+  for p in rot_package: 
     if p[0] == package:
       a = float(a) + p[1]
+  for p in bom:
+    if p[0] == ref:
+      for lp in rot_part:
+        if lp[0] == p[3]:
+          a = float(a) + lp[1]
+          print("rotate", p[3], p[0])
   place.append((ref, package, layer, attr, x, y, a))
 
 def parse_place(node):
@@ -72,7 +81,8 @@ def parse_comp(comp):
               if c[1][1] == Symbol("LCSC"):
                 lcsc = c[2]._val
       
-    bom.append([ref, val, footprint, lcsc])
+    if footprint != "":
+      bom.append([ref, val, footprint, lcsc])
 
 def parse_net(node):
   if isinstance(node, list):
@@ -83,24 +93,24 @@ def parse_net(node):
             if c[0] == Symbol("comp"):
               parse_comp(c[1:])
 
-
-
-
 if len(sys.argv) > 2:
   pcb_file = sys.argv[len(sys.argv) - 1]
   net_list_files = sys.argv[1:len(sys.argv) - 1]
 
+  print("pcb: ", pcb_file)
+  print("nets: ", net_list_files)
+
   pcb = open(pcb_file, "r")
   pcb_tree = loads(pcb.read())
   pcb.close()
-
-  parse_place(pcb_tree)
 
   for net_list_file in net_list_files:
     net_list = open(net_list_file, "r")
     net_tree = loads(net_list.read())
     net_list.close()
     parse_net(net_tree)
+
+  parse_place(pcb_tree)
 
   for b in bom:
     found = 0
@@ -116,17 +126,18 @@ if len(sys.argv) > 2:
   place_file.write("Designator,Mid X,Mid Y,Layer,Rotation\n")
 
   for p in place:
-    place_file.write(p[0] + "," + str(p[4]) + "," + str(p[5] * -1.0) + "," + p[2] + "," + str(p[6]) + "\n")
+    place_file.write(p[0] + ", " + str(p[4]) + ", " + str(p[5] * -1.0) + ", " + p[2] + ", " + str(p[6]) + "\n")
   place_file.close()
 
   bom_file = open("bom.csv", "w");
   bom_file.write("Comment,Designator,Footprint,LCSC\n")
 
   for b in bomr:
-    bom_file.write("\"" + str(b[1]) + " " + b[2].split(":")[1] + "\",\"" + b[0] + "\",\"" + b[2].split(":")[1] + "\"," + b[3] + "\n")
+    bom_file.write("\"" + str(b[1]) + " " + b[2].split(":")[1] + "\", \"" + b[0] + "\", \"" + b[2].split(":")[1] + "\", " + b[3] + "\n")
   bom_file.close()
   # for net_list_file in net_list_files:
   #   f = open(net_list_file, "r")
   #   f_tree = loads(f.read()))
   #   f.close()
-
+else:
+  print("usage: bom_pos.py .net .net ... .kicad_pcb")
