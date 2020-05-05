@@ -14,7 +14,10 @@ rot_part = [("C383538", 90.0)]
 # ("C37448", -90.0), ("C9669", -90.0)
 
 def parse_module(module):
-  package = module[1]._val # package
+  if isinstance(module[1], Symbol):
+    package = module[1]._val
+  else:
+    package = module[1]
   x = ""
   y = ""
   a = ""
@@ -24,7 +27,11 @@ def parse_module(module):
   for n in module[2:]:
     if isinstance(n, list):
       if n[0] == Symbol('layer'):
-        if n[1]._val == "F.Cu":
+        if isinstance(n[1], Symbol):
+          layer = n[1]._val
+        else:
+          layer = n[1]
+        if layer == "F.Cu":
           layer = "top"
         else:
           layer = "bottom"
@@ -36,10 +43,16 @@ def parse_module(module):
         else:
           a = "0"
       if n[0] == Symbol('attr'):
-        attr = n[1]._val
+        if isinstance(n[1], Symbol):
+          attr = n[1]._val
+        else:
+          attr = n[1]
       if n[0] == Symbol('fp_text'):
         if n[1] == Symbol('reference'):
-          ref = n[2]._val
+          if isinstance(n[2], Symbol):
+            ref = n[2]._val
+          else:
+            ref = n[2]
   for p in rot_package: 
     if p[0] == package:
       a = float(a) + p[1]
@@ -66,20 +79,29 @@ def parse_comp(comp):
     lcsc = ""
     for n in comp:
       if n[0] == Symbol("ref"):
-        ref = n[1]._val
+        if isinstance(n[1], Symbol):
+          ref = n[1]._val
+        else:
+          ref = n[1]
       if n[0] == Symbol("value"):
         if isinstance(n[1], Symbol):
           val = n[1]._val
         else:
           val = n[1]
       if n[0] == Symbol("footprint"):
-        footprint = n[1]._val
+        if isinstance(n[1], Symbol):
+          footprint = n[1]._val
+        else:
+          footprint = n[1]
       if n[0] == Symbol("fields"):
         for c in n[1:]:
           if c[0] == Symbol("field"):
             if c[1][0] == Symbol("name"):
               if c[1][1] == Symbol("LCSC"):
-                lcsc = c[2]._val
+                if isinstance(n[2], Symbol):
+                  lcsc = n[2]._val
+                else:
+                  lcsc = n[2]
       
     if footprint != "":
       bom.append([ref, val, footprint, lcsc])
