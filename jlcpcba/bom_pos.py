@@ -97,11 +97,11 @@ def parse_comp(comp):
         for c in n[1:]:
           if c[0] == Symbol("field"):
             if c[1][0] == Symbol("name"):
-              if c[1][1] == Symbol("LCSC"):
-                if isinstance(n[2], Symbol):
-                  lcsc = n[2]._val
+              if c[1][1] == Symbol("LCSC") or c[1][1] == "LCSC":
+                if isinstance(c[2], Symbol):
+                  lcsc = c[2]._val
                 else:
-                  lcsc = n[2]
+                  lcsc = c[2]
       
     if footprint != "":
       bom.append([ref, val, footprint, lcsc])
