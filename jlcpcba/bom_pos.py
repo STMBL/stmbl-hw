@@ -11,7 +11,15 @@ bomr = []
 rot_package = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0), ("stmbl:SOT-23-6", -180.0), ("stmbl:SOT-23", -180.0), ("stmbl:SOIC-8-N", -90.0), ("stmbl:SOIC-8-POWER", -90.0), ("stmbl:Oscillator_SMD_0603_4Pads", -90.0), ("stmbl:LQFP-48_7x7mm_Pitch0.5mm", -90.0), ("stmbl:LQFP-64_12x12_Pitch0.5mm", -90.0), ("stmbl:CP_D6.3", -180.0), ("stmbl:SWRB1204S", -180.0), ("stmbl:MWSA0503", -180.0), ("stmbl:SMA_Standard", -180.0), ("stmbl:SOD-123", -180.0), ("stmbl:D_SMC", -180.0)]
 rot_part = [("C383538", 90.0)]
 
+package_remap = [("R_0805", "0805"), ("R_0603", "0603"), ("R_0402", "0402"), ("C_0805", "0805"), ("C_0603", "0603"), ("C_0402", "0402")]
+
 # ("C37448", -90.0), ("C9669", -90.0)
+
+def remap_footprint(footprint):
+  for f in package_remap:
+    if f[0] == footprint:
+      footprint = f[1]
+  return footprint 
 
 def parse_module(module):
   if isinstance(module[1], Symbol):
@@ -155,7 +163,7 @@ if len(sys.argv) > 2:
   bom_file.write("Comment,Designator,Footprint,LCSC\n")
 
   for b in bomr:
-    bom_file.write("\"" + str(b[1]) + " " + b[2].split(":")[1] + "\", \"" + b[0] + "\", \"" + b[2].split(":")[1] + "\", " + b[3] + "\n")
+    bom_file.write("\"" + str(b[1]) + " " + remap_footprint(b[2].split(":")[1]) + "\", \"" + b[0] + "\", \"" + remap_footprint(b[2].split(":")[1]) + "\", " + b[3] + "\n")
   bom_file.close()
   # for net_list_file in net_list_files:
   #   f = open(net_list_file, "r")
