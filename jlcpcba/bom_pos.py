@@ -155,6 +155,7 @@ if len(sys.argv) > 2:
   place_file = open("place.csv", "w");
   place_file.write("Designator,Mid X,Mid Y,Layer,Rotation\n")
 
+  place = sorted(place, key = lambda p: p[0])
   for p in place:
     place_file.write(p[0] + ", " + str(p[4]) + ", " + str(p[5] * -1.0) + ", " + p[2] + ", " + str(p[6]) + "\n")
   place_file.close()
