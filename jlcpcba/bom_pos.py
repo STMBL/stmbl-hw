@@ -8,6 +8,52 @@ place = []
 bom = []
 bomr = []
 
+part_map = [
+  ("16M", "stmbl:Crystal_SMD_3225_4Pads", "C13738"),
+  ("12pf", "stmbl:C_0603", "C38523"),
+  ("22", "stmbl:R_0603", "C23345"),
+  ("1.5k", "stmbl:R_0603", "C22843"),
+  ("USBLC6-4SC6", "stmbl:SOT-23-6", "C85364"),
+  ("100n", "stmbl:C_0603", "C14663"),
+  ("STM32F303RCTx", "stmbl:LQFP-64_12x12_Pitch0.5mm", "C65361"),
+  ("1k", "stmbl:R_0603", "C21190"),
+  ("MP2359", "stmbl:SOT-23-6", "C14259"),
+  ("100u 1A", "stmbl:SWRB1204S", "C169400"),
+  ("4.7u 1.5A", "stmbl:MWSA0503", "C408410"),
+  ("10n", "stmbl:C_0603", "C57112"),
+  ("2.7k", "stmbl:R_0603", "C13167"),
+  ("30k", "stmbl:R_0603", "C22984"),
+  ("56k", "stmbl:R_0603", "C23206"),
+  ("10k", "stmbl:R_0603", "C25804"),
+  ("100k", "stmbl:R_0603", "C25803"),
+  ("INDUCTOR", "stmbl:R_0603", "C1034"),
+  ("33n", "stmbl:C_0603", "C21117"),
+  ("1u", "stmbl:C_1206", "C13832"),
+  ("SMCJ75A", "stmbl:D_SMC", "C184464"),
+  ("10u", "stmbl:C_0805", "C15850"),
+  ("XC6206P332MR", "stmbl:SOT-23", "C5446"),
+  ("10u", "stmbl:CP_D6.3", "C134747"),
+  ("s210", "stmbl:SMA_Standard", "C14996"),
+  ("B5819W", "stmbl:SOD-123", "C8598"),
+  ("120", "stmbl:R_0603", "C22787"),
+  ("XL7026", "stmbl:SOIC-8-POWER", "C89529"),
+  ("5.1", "stmbl:R_0603", "C25197"),
+  ("RS485", "stmbl:SOIC-8-N", "C6855"),
+  ("LM358", "stmbl:SOIC-8-N", "C7950"),
+  ("18p", "stmbl:C_0603", "C1647"),
+  ("15k", "stmbl:R_0603", "C22809"),
+  ("5.1k", "stmbl:R_0603", "C23186"),
+  ("560", "stmbl:R_0603", "C23204"),
+  ("22k", "stmbl:R_0603", "C31850"),
+  ("470", "stmbl:R_0603", "C23179"),
+  ("AO3400A", "stmbl:SOT-23", "C20917"),
+  ("200", "stmbl:R_0603", "C8218"),
+  ("eg3112", "stmbl:SOIC-8-N", "C383538"),
+  ("2.2", "stmbl:R_0603", "C22939"),
+  ("SED10070GG", "stmbl:SO-8FL", "C396083"),
+  ("0.002", "stmbl:R_2512", "C60923"),
+]
+
 rot_package = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0), ("stmbl:SOT-23-6", -180.0), ("stmbl:SOT-23", -180.0), ("stmbl:SOIC-8-N", -90.0), ("stmbl:SOIC-8-POWER", -90.0), ("stmbl:Oscillator_SMD_0603_4Pads", -90.0), ("stmbl:LQFP-48_7x7mm_Pitch0.5mm", -90.0), ("stmbl:LQFP-64_12x12_Pitch0.5mm", -90.0), ("stmbl:CP_D6.3", -180.0), ("stmbl:SWRB1204S", -180.0), ("stmbl:MWSA0503", -180.0), ("stmbl:SMA_Standard", -180.0), ("stmbl:SOD-123", -180.0), ("stmbl:D_SMC", -180.0)]
 rot_part = [("C383538", 90.0)]
 
@@ -69,7 +115,7 @@ def parse_module(module):
       for lp in rot_part:
         if lp[0] == p[3]:
           a = float(a) + lp[1]
-          print("rotate", p[3], p[0])
+          #print("rotate", p[3], p[0])
   place.append((ref, package, layer, attr, x, y, a))
 
 def parse_place(node):
@@ -81,7 +127,7 @@ def parse_place(node):
 
 def parse_comp(comp):
   if isinstance(comp, list):
-    rev = ""
+    ref = ""
     val = ""
     footprint = ""
     lcsc = ""
@@ -110,6 +156,12 @@ def parse_comp(comp):
                   lcsc = c[2]._val
                 else:
                   lcsc = c[2]
+    if lcsc == "":
+      for p in part_map:
+        if val == p[0] and footprint == p[1]:
+          lcsc = p[2]
+          print("map " + ref + " " + val + " " + footprint + " => " + lcsc)
+
       
     if footprint != "":
       bom.append([ref, val, footprint, lcsc])
@@ -152,7 +204,7 @@ if len(sys.argv) > 2:
     if found == 0:
       bomr.append(b)
 
-  place_file = open("place.csv", "w");
+  place_file = open("place.csv", "w")
   place_file.write("Designator,Mid X,Mid Y,Layer,Rotation\n")
 
   place = sorted(place, key = lambda p: p[0])
@@ -160,10 +212,11 @@ if len(sys.argv) > 2:
     place_file.write(p[0] + ", " + str(p[4]) + ", " + str(p[5] * -1.0) + ", " + p[2] + ", " + str(p[6]) + "\n")
   place_file.close()
 
-  bom_file = open("bom.csv", "w");
+  bom_file = open("bom.csv", "w")
   bom_file.write("Comment,Designator,Footprint,LCSC\n")
 
   for b in bomr:
+    #print("(\"" + str(b[1]) + "\", \"" + b[2] + "\", \"" + b[3] + "\"),")
     bom_file.write("\"" + str(b[1]) + " " + remap_footprint(b[2].split(":")[1]) + "\", \"" + b[0] + "\", \"" + remap_footprint(b[2].split(":")[1]) + "\", " + b[3] + "\n")
   bom_file.close()
   # for net_list_file in net_list_files:
