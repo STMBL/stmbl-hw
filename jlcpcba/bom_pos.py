@@ -58,7 +58,7 @@ part_map = [
   ("100u 1A", "stmbl:SWRB1204S", "C169400"),
 ]
 
-rot_package = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0), ("stmbl:SOT-23-6", -180.0), ("stmbl:SOT-23", -180.0), ("stmbl:SOIC-8-N", -90.0), ("stmbl:SOIC-8-POWER", -90.0), ("stmbl:Oscillator_SMD_0603_4Pads", -90.0), ("stmbl:LQFP-48_7x7mm_Pitch0.5mm", -90.0), ("stmbl:LQFP-64_12x12_Pitch0.5mm", -90.0), ("stmbl:CP_D6.3", -180.0), ("stmbl:SWRB1204S", -180.0), ("stmbl:MWSA0503", -180.0), ("stmbl:SMA_Standard", -180.0), ("stmbl:SOD-123", -180.0), ("stmbl:D_SMC", -180.0)]
+rot_package = [("stmbl:SOIC-16", -90.0), ("stmbl:SOT-23-5", -180.0), ("stmbl:SOT-23-6", -180.0), ("stmbl:SOT-23", -180.0), ("stmbl:SOIC-8-N", -90.0), ("stmbl:SOIC-8-POWER", -90.0), ("stmbl:Oscillator_SMD_0603_4Pads", -90.0), ("stmbl:LQFP-48_7x7mm_Pitch0.5mm", -90.0), ("stmbl:LQFP-64_12x12_Pitch0.5mm", -90.0), ("stmbl:CP_D6.3", -180.0), ("stmbl:SWRB1204S", -180.0), ("stmbl:MWSA0503", -180.0)]
 rot_part = [("C383538", 90.0)]
 
 package_remap = [("R_0805", "0805"), ("R_0603", "0603"), ("R_0402", "0402"), ("C_0805", "0805"), ("C_0603", "0603"), ("C_0402", "0402")]
